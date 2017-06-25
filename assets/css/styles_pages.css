@@ -1,0 +1,725 @@
+/* TEXT COULEURS */
+    
+    .text-perso-blue{
+        color: #103744;
+    }
+
+    .text-perso-white{
+        color: #fff;
+    }
+
+    .text-perso-grey{
+        color: #8A8C8B;
+    }
+
+    .text-perso-red{
+        color: #fff;
+    }
+
+    .text-perso-green{
+        color: #095e4f;
+    }
+
+    .text-perso-orange{
+        color: #ca5c1d;
+    }
+
+
+/*TEXTES CONFIG*/
+
+
+
+
+/*CONTENU*/
+
+    .contenu{
+        padding-top: 50px;
+        padding-left: 60px;
+        padding-bottom: 50px;
+        padding-right: 60px;
+    }
+
+/*HEADER ACCUEIL*/
+
+    .header-accueil-perso{
+        margin: 0px;
+        padding-bottom: 50px;
+    }
+
+    .header-accueil-perso h1{
+        margin-top: 60px;
+        font-size: 60px;
+        font-weight: 700;
+    }
+
+    .header-accueil-perso h2{
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+
+/*ACCUEIL*/
+
+    .header-accueil-perso a .bouton{
+        background-color: white;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 2px;
+    }
+
+    .header-accueil-perso a{
+        color: #103744;
+        background-color: #fff
+    }
+
+    .header-accueil-perso a .bouton:hover{
+        text-decoration: none;
+        text-transform: none;
+        background-color: #103744;
+        color: white;
+    }
+
+
+/* FORMULAIRES ET SUBMIT */
+
+    .login-perso .input-connexion{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: solid 1px #103744;
+        background-color: #fefefe;
+        border-radius: 2px;
+    }
+
+
+    .login-perso .btn-perso{
+        width: 100%;
+        margin-top: 10px;
+        background-color: #bababa;
+        border: solid 1px #103744;
+        color: #103744;
+        border-radius: 2px;
+    }
+
+    .login-perso .btn-perso:hover{
+        background-color: #103744;
+        border: solid 1px #103744;
+        color: white;
+    }
+
+    .login-perso a{
+        color: #103744;
+    }
+
+    .login-perso a:hover{
+        text-decoration: none;
+    }
+
+    .login-perso p{
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .login-perso h1{
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .login-perso h3{
+        font-weight: 400;
+        margin-top: -10px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .login-perso .selectpicker{
+        width: 100%;
+    }
+
+
+    /*Bouton genre*/
+
+        .login-perso .btn-default{
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: solid 1px #103744;
+            background-color: #fefefe;
+            border-radius: 2px;
+        }
+
+    .settings label{
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .settings .entete-modif{
+        background-color: #fefefe;
+        border: solid 1px #103744;
+        border-radius: 2px;
+        margin: 0px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .settings .selectpicker{
+        width: 100%;
+    }
+
+    .settings img{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: solid 5px #103744;
+        border-radius: 200px;
+    }
+
+    .settings p{
+        margin-bottom: 0px;
+    }
+
+    .settings .btn-edit{
+        background-color: #103744;
+        opacity: 0.7;
+        color: white;
+        font-size: 13px;
+        border-radius: 20px;
+        margin-top: 12px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+
+    .settings .btn-edit:hover{
+        opacity: 1;
+    }
+
+    .settings .btn-delete{
+        background-color: #b22b2b;
+        opacity: 0.7;
+        color: white;
+        font-size: 13px;
+        border-radius: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 100%
+    }
+
+    .settings .btn-delete:hover{
+        opacity: 1;
+    }
+
+
+/*HEADER PROFIL*/
+
+    .header-profil-perso{
+        margin: 0px;
+        padding-top: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 20px;
+        background-color: #d9d9d9;
+    }
+
+    .header-profil-perso h1{
+        font-size: 30px;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    /* BOUTONS */
+
+        .header-profil-perso .btn-edit{
+            background-color: #ca5c1d;
+            opacity: 0.7;
+            color: white;
+            font-size: 13px;
+            border-radius: 20px;
+            margin-top: 12px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .header-profil-perso .btn-add{
+            background-color: #063a6d;
+            opacity: 0.7;
+            color: white;
+            font-size: 13px;
+            border-radius: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 38px;
+        }
+
+        .header-profil-perso .btn-follow{
+            background-color: #095e4f;
+            opacity: 0.7;
+            color: white;
+            font-size: 13px;
+            border-radius: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .header-profil-perso .btn-delete{
+            background-color: #b22b2b;
+            opacity: 0.7;
+            color: white;
+            font-size: 13px;
+            border-radius: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .header-profil-perso .btn-edit:hover,
+        .header-profil-perso .btn-add:hover,
+        .header-profil-perso .btn-follow:hover,
+        .header-profil-perso .btn-delete:hover{
+            opacity: 1;
+        }
+
+    .header-profil-perso .img-profil{
+        border-radius: 200px;
+        border: solid 5px #103744;
+    }
+
+
+    .header-profil-perso .btn-edit span,
+    .header-profil-perso .btn-add span,
+    .header-profil-perso .btn-follow span,
+    .header-profil-perso .btn-delete span{
+        margin-right: 7px;
+    }
+
+    .header-profil-perso .nav{
+        margin-top: 40px;
+        margin-bottom: 0px;
+        border: none;
+    }
+
+    .header-profil-perso .nav a{
+        margin-left: 5px;
+        margin-right: 35px;
+        border-radius: 20px;
+        color: #103744;
+        padding: 4px 12px;
+        border: none;
+    }
+
+    .header-profil-perso .nav-tabs>li.active>a, 
+    .header-profil-perso .nav-tabs>li.active>a:focus, 
+    .header-profil-perso .nav-tabs>li.active>a:hover {
+        color: white;
+        cursor: default;
+        background-color: #103744;
+        border: none;
+    }
+
+    .header-profil-perso.nav>li>a:focus, 
+    .header-profil-perso.nav>li>a:hover {
+        text-decoration: none;
+        color: white;
+        background-color: none;
+    }
+
+
+
+/*ZONE PROFIL*/
+
+    .contenu-profil-perso{
+        margin-top: 30px;
+    }
+
+    .profil-item-content{
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .profil-item-content-genre{
+        padding: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 200px;
+    }
+
+    .profil-item-content-genre a:hover{
+        text-decoration: none;
+        color: #103744;
+    }
+
+    .profil-item-genre img{
+        opacity: 0.6;
+        width: 90%
+    }
+
+    .profil-item-genre img:hover{
+        margin-top: -10px;
+        width: 100%;
+        opacity: 1;
+    }
+
+    .profil-playlist .profil-item{
+        background-color: #fefefe;
+        border-radius: 2px;
+        padding: 10px;
+        margin: 0px;
+        height: 67px;
+    }
+
+    .profil-abonne .profil-item{
+        background-color: #fefefe;
+        border-radius: 2px;
+        padding: 10px;
+        margin: 0px;
+        height: 80px;
+    }
+
+    .playlist .profil-item{
+        background-color: #fefefe;
+        border-radius: 2px;
+        padding: 10px;
+        margin: 0px;
+        height: 135px;
+    }
+
+    .profil-item-genre{
+        border-radius: 2px;
+        padding: 10px;
+        margin: 0px;
+        padding-top: 0px;
+        padding-bottom:0px;
+        margin-bottom: 0px;
+    }
+
+    .profil-item-genre h3{
+        padding-top: 5px;
+        margin-top: 6px;
+        margin-left: -15px;
+        padding-bottom: 0px;
+        margin-bottom: 5px;
+        font-size: 25px;
+        font-weight: 700;
+        word-wrap: break-word;
+    }
+
+    .profil-playlist .profil-item h3,
+    .profil-abonne .profil-item h3{
+        padding-top: 5px;
+        margin-top: 6px;
+        margin-left: -15px;
+        padding-bottom: 0px;
+        margin-bottom: 5px;
+        font-size: 20px;
+        font-weight: 700;
+        word-wrap: break-word;
+    }
+
+    .playlist .profil-item h3{
+        padding-top: 5px;
+        margin-top: 6px;
+        padding-bottom: 0px;
+        margin-bottom: 5px;
+        font-size: 20px;
+        font-weight: 700;
+        word-wrap: break-word;
+    }
+
+    .profil-playlist .profil-item h4,
+    .profil-abonne .profil-item h4,
+    .playlist .profil-item h4{
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-left: -15px;
+        font-size: 13px;
+        font-weight: 400;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .profil-playlist .profil-item .i-playlist,
+    .profil-abonne .profil-item .i-playlist,
+    .playlist .profil-item .i-playlist{
+        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+
+    .profil-item .img-genre{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .profil-playlist .profil-item i,
+    .profil-abonne .profil-item i{
+        margin-right: 10px;
+    }
+
+    .profil-playlist .profil-item:hover,
+    .profil-abonne .profil-item:hover,
+    .playlist .profil-item:hover{
+        color: white;
+        background-color: #103744;
+    }
+
+    .img-abonne{
+        margin-top: 4px;
+        border-radius: 200px;
+        border: solid 2px #103744;
+    }
+
+
+/*PLAYLIST*/
+
+    .playlist-header h1{
+        margin-top: 15px;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .playlist-header img{
+        margin-top: -5px;
+    }
+
+
+/*ZONE GENRE*/
+
+    .all-abonnes-header h1{
+        margin-top: 0px;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .genre-header h1{
+        margin-top: 15px;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .img-abonne2{
+        margin-top: -5px;
+        margin-bottom: 15px;
+        border-radius: 200px;
+        border: solid 2px #103744;
+    }
+
+    .genre .btn-add{
+        background-color: #063a6d;
+        opacity: 0.7;
+        color: white;
+        font-size: 13px;
+        border-radius: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .profil .btn-add{
+        background-color: #063a6d;
+        opacity: 0.7;
+        color: white;
+        font-size: 13px;
+        border-radius: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+
+    .playlist .btn-edit{
+        background-color: #ca5c1d;
+        opacity: 0.7;
+        color: white;
+        font-size: 13px;
+        border-radius: 20px;
+        margin-top: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .playlist .btn-edit:hover,
+    .playlist .btn-delete:hover,
+    .profil .btn-add:hover,
+    .genre .btn-add:hover{
+        opacity: 1;
+    }
+
+
+    .playlist .btn-delete{
+        background-color: #b22b2b;
+        margin-top: 5px;
+        opacity: 0.7;
+        color: white;
+        font-size: 13px;
+        border-radius: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+
+/*ABONNES*/
+
+    .abonnes-header h1{
+        margin-top: 0px;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+
+/*POST*/
+
+    .profil .post-profil{
+        background-color: #fefefe;
+        border-radius: 2px;
+        padding: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+    }
+
+    .profil .post-profil h1{
+        padding-top: 0px;
+        margin-top: 0px;
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    .profil .post-profil h2{
+        padding-top: 0px;
+        margin-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .profil .post-profil h3{
+        padding-top: 0px;
+        margin-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .profil .post-profil h4{
+        font-size: 14px;
+
+    }
+
+    .profil .post-profil p{
+        font-size: 12px;
+        padding-top: 0px;
+        margin-top: -5px;
+    }
+
+    .profil .post-profil a:hover{
+        text-decoration: none;
+    }
+
+    .profil .post-profil .add-playlist-genre{
+        margin-top: 20px; 
+        margin-bottom: 20px;
+    }
+
+    .add-playlist-genre .btn-add:hover{
+        opacity: 1;
+    }
+
+    .profil .not-post{
+        margin-bottom: 50px;
+        font-weight: 700;
+    }
+
+    .genre .post-profil{
+        background-color: #fefefe;
+        border-radius: 2px;
+        padding: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+    }
+
+    .genre .post-profil h1{
+        padding-top: 0px;
+        margin-left: -15px;
+        margin-top: 3px;
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    .genre .post-profil h2{
+        padding-top: 0px;
+        margin-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .genre .post-profil h3{
+        padding-top: 0px;
+        margin-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .genre .post-profil h4{
+        font-size: 14px;
+
+    }
+
+    .genre .post-profil p{
+        font-size: 12px;
+        padding-top: 0px;
+        margin-top: -5px;
+    }
+
+    .genre .post-profil a:hover{
+        text-decoration: none;
+    }
+
+    .genre .post-profil .add-playlist-genre{
+        margin-top: 20px; 
+        margin-bottom: 20px;
+    }
+
+    .genre .not-post{
+        margin-bottom: 50px;
+        font-weight: 700;
+    }
+
+    .post-profil .btn-delete{
+        background-color: #b22b2b;
+        margin-top: 5px;
+        opacity: 0.7;
+        color: white;
+        font-size: 13px;
+        border-radius: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+/* CGU */
+
+p {
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+    

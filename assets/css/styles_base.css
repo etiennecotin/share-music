@@ -1,0 +1,477 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html{
+    overflow-x: hidden; 
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #f1f1f1;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background-color: #bababa;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-right: solid 1px #103744;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding-top: 70px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* SIDEBAR */
+
+    .sidebar-nav {
+        position: absolute;
+        top: 0;
+        width: 250px;
+        margin: 0;
+        padding-top: 70px;
+        list-style: none;
+    }
+
+    .sidebar-nav li {
+        text-indent: 20px;
+        line-height: 28px;
+    }
+
+    .sidebar-nav .sidebar-titre a {
+        font-size: 18px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        display: block;
+        font-weight: bold;
+        text-decoration: none;
+        color: #103744;
+    }
+
+    .sidebar-nav .sidebar-titre i{
+        margin-left: -10px;
+        margin-right: 20px;
+    }
+
+        .sidebar-nav .sidebar-lien span{
+            margin-left: -20px;
+            margin-right: 10px;
+            font-size: 11px;
+        }
+
+        .sidebar-nav .sidebar-lien a {
+            font-size: 14px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 12px;
+            font-weight: 400;
+            display: block;
+            text-decoration: none;
+            color: #103744;
+        }
+
+        .sidebar-nav .sidebar-lien p {
+            font-size: 14px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 34px;
+            font-weight: 400;
+            display: block;
+            text-decoration: none;
+            color: grey;
+        }
+
+
+    .sidebar-nav li a:hover {
+        text-decoration: none;
+        color: #fff;
+        background-color: #103744;
+    }
+
+    .sidebar-nav li a:active,
+    .sidebar-nav li a:focus {
+        text-decoration: none;
+    }
+
+    .sidebar-nav > .sidebar-brand {
+        height: 65px;
+        font-size: 18px;
+        text-decoration: bold;
+        line-height: 60px;
+    }
+
+    .sidebar-nav > .sidebar-brand a {
+        color: #103744;
+    }
+
+    .sidebar-titre{
+        display: inline;
+        text-decoration: none;
+        color: #103744;
+        font-size: 20px;
+    }
+
+    .sidebar-nav .sidebar-active a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #103744;
+    }
+
+    @media(min-width:768px) {
+        #wrapper {
+            /*padding-left: 250px;*/
+        }
+
+        #wrapper.toggled {
+            padding-left: 0;
+        }
+
+        #sidebar-wrapper {
+            width: 250px;
+        }
+
+        #wrapper.toggled #sidebar-wrapper {
+            width: 0;
+        }
+
+        #page-content-wrapper {
+            position: relative;
+        }
+
+        #wrapper.toggled #page-content-wrapper {
+            position: relative;
+            margin-right: 0;
+        }
+    }
+
+    #sidebar-wrapper.active {
+        right: 250px;
+        width: 250px;
+        -webkit-transition: all 0.4s ease 0s;
+        -moz-transition: all 0.4s ease 0s;
+        -ms-transition: all 0.4s ease 0s;
+        -o-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
+    }
+
+    .toggle {
+        margin: 5px 5px 0 0;
+    }
+
+ .sidebar-footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: grey;
+    padding-left: 45px;
+ }
+
+ .sidebar-footer a {
+        color: grey;
+    font-size: 12px;
+ }
+
+ .sidebar-footer p {
+    text-align: center;
+    font-size: 12px;
+ }
+/* Barre supérieure */
+
+    .navbar-perso{
+        height: 70px;
+        margin-bottom: 0px;
+        padding-top: 6px;
+        background-color: #bababa;
+        border-radius: 0px;
+        border-bottom: solid 1px #103744;
+        font-size: 16px;
+    }
+
+    .logo{
+        padding-left: 55px;
+        padding-right: 55px;
+        margin-top: -10px;
+    }
+
+    /*barre recherche*/
+    .form-perso{
+        border: solid 1px #103744;
+        border-radius: 2px;
+        width: 300px;
+        height: 40px;
+    }
+
+    .button-perso{
+        border: solid 1px #103744;
+        height: 40px;
+        border-radius: 2px;
+    }
+
+    /*Utilisateur*/
+    .utilisateur-perso .dropdown-toggle{
+        margin-top: 7px;
+        margin-left: 30px;
+        float: right;
+    }
+
+    .utilisateur-perso img{
+        display: inline;
+        margin-top: 0px;
+        width: 40px;
+        margin-left: 30px;
+        margin-right: 20px; 
+    }
+
+    .utilisateur-perso .dropdown-toggle a:hover,
+    .utilisateur-perso .dropdown-toggle li a:active,
+    .utilisateur-perso .dropdown-toggle li a:focus{
+        background-color: #bababa;
+        text-decoration: none;
+    }
+
+    .icon-menu-perso{
+        opacity: 0.7;
+        font-size: 25px;
+    }
+
+    .icon-menu-perso:hover{
+        opacity: 1;
+        font-size: 25px;
+    }
+
+    .navbar-right li a{
+        padding: 0px;
+        margin: 15px 20px;
+    }
+
+    .navbar-right li a:hover,
+    .navbar-right li a:active,
+    .navbar-right li a:focus{
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    .dropdown-user-perso a i{
+        margin-right: 10px;
+    }
+
+    .dropdown-menu-base{
+        background-color: #bababa;
+        border-top: solid 1px #bababa;
+        border-right: solid 1px #bababa;
+        border-left: solid 1px #103744;
+        border-bottom: solid 1px #103744;
+        border-radius: 0px;
+    }
+
+
+/* MODAL */
+
+    .add-music-popup .modal-backdrop {
+        /* position: fixed; */
+        top: auto;
+        right: 0;
+        bottom: auto;
+        left: 0;
+        z-index: 1040;
+        background-color: #000;
+    }
+
+    .add-music-popup .modal-footer{
+        border: none;
+    }
+
+    .add-music-popup .body{
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+
+/*MODAL ADD*/
+
+    .add-music-popup .modal-add .modal-content{
+        background-color: white;
+    }
+
+    .add-music-popup .modal-footer .btn-add{
+        background-color: #063a6d;
+        opacity: 0.7;
+        color: white;
+        font-size: 13px;
+        border-radius: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .add-music-popup .modal-footer .btn-delete{
+        background-color: #b22b2b;
+        opacity: 0.7;
+        color: white;
+        font-size: 13px;
+        border-radius: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .add-music-popup .modal-footer .btn-delete:hover{
+        opacity: 1;
+    }
+
+    .add-music-popup .modal-footer .btn-add:hover{
+        opacity: 1;
+    }
+
+    .add-music-popup h2{
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .add-music-popup label{
+        margin-top: 10px;
+    }
+
+
+/* TEXT COULEURS */
+    
+    .text-perso-blue{
+        color: #103744;
+    }
+
+    .text-perso-white{
+        color: #fff;
+    }
+
+
+::-webkit-scrollbar { 
+    width: 12px; 
+    height: 3px;
+}
+
+
+
+::-webkit-scrollbar-track {  background-color: #999;}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #bababa;
+    
+}
+
+::-webkit-scrollbar-thumb { height: 50px; background-color: #103744;}
+
+::-webkit-scrollbar-corner { background-color: #999;}
+
+::-webkit-resizer { background-color: #666;}
+
+
+
+
+
+
+

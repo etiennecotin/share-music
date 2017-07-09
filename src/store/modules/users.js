@@ -70,15 +70,29 @@ const actions = {
         return new Promise((resolve, reject) => {
 
             const user_id = localStorage.getItem('id');
-
+            const route = JSON.parse(localStorage.getItem('route'));
+            // console.log(route)
             if (user_id){
 
+                localStorage.removeItem('route')
+
                 console.warn(user_id);
+                console.log(route)
 
                 commit(types.LOG_USER)
 
-                resolve(true)
+                const routeProgram = {};
+                routeProgram['name'] = route.routeName
+                if(route.routeParams){
+                    console.log(route.routeParams)
+                    routeProgram['param'] = route.routeParams
+                    resolve(routeProgram)
 
+                }else {
+
+                    resolve(routeProgram)
+
+                }
             }else {
                 reject(false)
             }

@@ -12,7 +12,9 @@
 
             </div>
             <div class="row" v-else="!pageLoader">
-                <h1>Categorie {{category[0].nom}}</h1>
+                <h1>Categorie {{category[0].nom}} - <button @click="test">go</button></h1>
+
+
 
             </div>
         </div>
@@ -56,6 +58,9 @@
         },
         methods: {
 
+            test() {
+                this.$router.push({ name: 'allCategory'})
+            }
         },
         components: {
 

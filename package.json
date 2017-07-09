@@ -1,5 +1,5 @@
 {
-  "name": "sharemusic",
+  "name": "Sharemusic",
   "description": "Partage de musique en ligne",
   "version": "1.0.1",
   "author": "etienne cotin",
@@ -13,12 +13,14 @@
     "vue": "^2.2.1",
     "vue-axios": "^2.0.2",
     "vue-material": "^0.7.1",
+    "vue-resource": "^1.3.4",
     "vue-router": "^2.6.0",
     "vuex": "^2.3.1"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-latest": "^6.0.0",
     "cross-env": "^3.0.0",
     "css-loader": "^0.25.0",

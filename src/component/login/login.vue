@@ -167,11 +167,16 @@
 
                 if (this.username && this.password){
 
-                    store.dispatch('logIn', {'username':this.username, 'password':this.password}).then(response => {
+                    store.dispatch('logIn', {'username':this.username, 'password':this.password}).then((response) => {
                         console.warn('Logged')
 //                        this.user.logged=true
+                        console.log(response)
+                        if(response.param){
+                            setTimeout(function () {this.$router.push({ name: response.name , params: response.param })}.bind(this),2000)
+                        }else {
+                            setTimeout(function () {this.$router.push({ name: response.name })}.bind(this),2000)
+                        }
 
-                        setTimeout(function () {this.$router.push({ name: 'home'})}.bind(this),2000)
                     }, error => {
                         console.error("Not logged")
                     })

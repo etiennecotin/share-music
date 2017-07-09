@@ -87,21 +87,6 @@ const actions = {
 
 // mutations
 const mutations = {
-    // increment: state => state.count++,
-
-    [types.GET_LOCAL_USER] (state) {
-        state.user.logged = true
-        state.user.username = 'etienne'
-    },
-    [types.LOG_USER] (state) {
-
-
-        setTimeout(function () {state.user.logged = true}.bind(this),2000)
-    },
-    [types.LOGOUT_USER] (state) {
-        state.user.logged = false
-    },
-    //
 
 };
 

@@ -71,11 +71,20 @@ const router = new VueRouter({
 
 router.beforeEach((to, from, next) => {
 
+
     store.dispatch('checkLoggedIn').then((response) => {
         console.warn('check logged main')
     }, (error) => {
         console.error("not logged main")
     });
+
+    const route = {}
+    if(to.name != 'login' || to.name != 'signUp' || to.name != 'logout' ){
+        route['routeName']  = to.name
+    }else {
+        route['routeName']  = 'home'
+    }
+    route['routeParams']  = to.params
 
     if (to.matched.some(record => record.meta.noAuth)) {
         // this route requires auth, check if logged in
@@ -96,8 +105,8 @@ router.beforeEach((to, from, next) => {
         // if not, redirect to login page.
         // console.log(store.getters.user.logged+' not log');
         if (store.getters.user.logged === false) {
+            localStorage.setItem('route', JSON.stringify(route))
             next({
-
                 name: 'login',
                 // query: { redirect: to.fullPath }
             })

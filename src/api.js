@@ -4,7 +4,7 @@
 import axios from 'axios';
 
 export const HTTP = axios.create({
-    baseURL: `https://jsonplaceholder.typicode.com`,
+    baseURL: `http://localhost/laravel/laravel5/public/api/v1/`,
     headers: {
         Authorization: 'Bearer {token}'
     }

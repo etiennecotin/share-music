@@ -113,7 +113,7 @@
         <div id="wrapper">
 
             <!-- Sidebar -->
-            <side-bar></side-bar>
+            <side-bar :user="user" :allCategory="allCategory"></side-bar>
 
 
 
@@ -185,10 +185,12 @@
                 this.home = false
             }
 
+
         },
         computed: mapGetters({
             notification: 'notification',
             user: 'user',
+            allCategory: 'allCategory'
         }),
         methods: {
 
@@ -198,12 +200,30 @@
             'side-bar': sideBar,
         },
         watch: {
+            '$route': function(e){
 
+                if(e.name == 'home'){
+//                    console.log(this.url.name);
+                    this.home = true
+                }else{
+//                    console.log(this.url);
+                    this.home = false
+                }
+            },
             notification () {
                 if (this.notification != null){
                     this.$refs.snackbar.open();
                 }
 
+            },
+            user: function (val) {
+
+                console.warn(val)
+                if (val == true){
+                    this.user.logged = false
+                }else {
+                    this.user.logged = true
+                }
             }
         }
 

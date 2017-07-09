@@ -4,7 +4,7 @@ import Vuex from 'vuex'
 import test from './modules/test'
 import general from './modules/general'
 import users from './modules/users'
-// import info from './modules/info'
+import category from './modules/category'
 // import menu from './modules/menu'
 // import messages from './modules/messages'
 // import enseignants from './modules/enseignants'
@@ -16,7 +16,7 @@ export default new Vuex.Store({
         test,
         general,
         users,
-        // info,
+        category,
         // menu,
         // messages,
         // enseignants

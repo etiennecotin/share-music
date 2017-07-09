@@ -16,6 +16,8 @@ import login from './component/login/login.vue'
 import signUp from './component/login/signUp.vue'
 import logout from './component/login/logout.vue'
 import user from './component/login/user.vue'
+import category from './component/category/category.vue'
+import viewCategory from './component/category/viewCategory.vue'
 
 import Base from './component/base.vue'
 
@@ -36,6 +38,10 @@ import VueMaterial from 'vue-material'
 
 import store from './store/index'
 
+store.dispatch('getAllCategory').then(() => {
+            // var routerCategory = store.getters.routerCategory
+})
+
 const router = new VueRouter({
 	mode: 'history',
 	base: __dirname,
@@ -47,6 +53,10 @@ const router = new VueRouter({
               { name: 'signUp', path: 'signup', component: signUp}
           ]
       },
+      { name : 'allCategory', path: '/category', component: viewCategory, meta: { requiresAuth: true },
+
+      },
+      { name: 'category', path: '/category/:url_name', component: category, meta: { requiresAuth: true }},
       // {name: 'signUp', path: '/login/signup', component: signUp, meta: { noAuth: true }},
 
       {name: 'logout', path: '/login/logout', component: logout, meta: { requiresAuth: true }},
@@ -57,6 +67,7 @@ const router = new VueRouter({
       { path: '*', redirect: { name: 'home' }}
     ]
 });
+
 
 router.beforeEach((to, from, next) => {
 
@@ -86,6 +97,7 @@ router.beforeEach((to, from, next) => {
         // console.log(store.getters.user.logged+' not log');
         if (store.getters.user.logged === false) {
             next({
+
                 name: 'login',
                 // query: { redirect: to.fullPath }
             })

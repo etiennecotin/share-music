@@ -8,12 +8,7 @@
     <button @click="increment">+</button>
     <button v-if="count > 0" @click="decrement">-</button>
 
-    <!--<span >-->
 
-
-
-
-    <!--</span>-->
   </p>
 </div>
 </template>
